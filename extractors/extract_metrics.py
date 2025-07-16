@@ -78,3 +78,20 @@ def extract_esg_metrics(text):
 
     df = pd.DataFrame(all_metrics)
     return df
+
+def enrich_metrics_with_context(df, ner_matches):
+    if df.empty or "metric" not in df.columns:
+        return df
+
+    context_tags = []
+    for metric in df["metric"]:
+        matched = False
+        for ner in ner_matches:
+            if ner["match"].lower() in metric.lower():
+                context_tags.append(ner["match"])
+                matched = True
+                break
+        if not matched:
+            context_tags.append("UNKNOWN")
+    df["ner_context"] = context_tags
+    return df
