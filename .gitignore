@@ -58,4 +58,5 @@ htmlcov/
 .tox/
 .nox/
 
-output/
+# Allow this one demo file
+!data/MacBook_Pro_16-inch_PER_Oct2024.pdf
