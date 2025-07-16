@@ -12,8 +12,14 @@ The pipeline extracts values like **carbon emissions**, **energy usage**, and **
 ---
 
 ## How to Run
+### 1. Clone the repository
 
-### 1. Install dependencies
+```bash
+git clone -b mvp https://github.com/geo-raju/esg-ocr-project.git
+cd esg-ocr-project
+```
+
+### 2. Install dependencies
 
 ```bash
 python -m venv venv
@@ -22,7 +28,7 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
-### 2. Run pipeline on a pdf file
+### 3. Run pipeline on a pdf file
 
 ```bash
 python main.py --input data/esg_report.pdf
