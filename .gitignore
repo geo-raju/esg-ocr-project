@@ -21,7 +21,9 @@ esg_env/
 
 # Output and temp data
 output/
-data/*.txt
+data/
+temp/
+vectorstores/
 *.csv
 *.json
 *.pdf
