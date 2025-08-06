@@ -1,8 +1,45 @@
-pytesseract
-pdf2image
-Pillow
-tqdm
-pandas
-transformers
-torch
-spacy
+# Core AI/ML libraries
+google-generativeai==0.8.5
+google-ai-generativelanguage==0.6.15
+
+# LangChain ecosystem
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-chroma>=0.1.0
+langchain-google-genai>=2.0.0
+langchain-core>=0.1.0
+
+# Vector database
+chromadb>=0.4.0
+
+# Data processing and validation
+pandas>=1.5.0
+pydantic>=2.0.0
+numpy>=1.24.0
+
+# PDF processing
+pypdf>=3.0.0
+
+# Environment and configuration
+python-dotenv>=1.0.0
+
+# Machine learning utilities
+scikit-learn>=1.3.0
+
+# Web framework (for potential deployment)
+streamlit>=1.28.0
+
+# Google API dependencies
+google-api-core>=2.11.0
+google-api-python-client>=2.0.0
+google-auth>=2.15.0
+protobuf>=4.21.0
+grpcio>=1.50.0
+grpcio-status>=1.50.0
+
+# Utility libraries
+tqdm>=4.65.0
+typing-extensions>=4.5.0
+requests>=2.28.0
+urllib3>=1.26.0
+certifi>=2022.12.7
